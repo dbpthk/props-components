@@ -29,8 +29,8 @@ function Conatiner({ children, layout = "vertical" }) {
 export default function ChildrenProps() {
   return (
     <section className="p-8 bg-white rounded-md shadow-lg">
-      <h2 className="text-3xl font-medium mb-2">Children Props</h2>
-      <p>
+      <h2 className="text-3xl font-bold text-gray-800 mb-2">Children Props</h2>
+      <p className="text-gray-600">
         Children props in React allow you to pass components or elements as
         children to other components. This is useful for creating reusable
         components that can wrap or contain other elements.

@@ -4,6 +4,7 @@ import ChildrenProps from "./assets/components/ChildrenProps";
 import ComplexProps from "./assets/components/ComplexProps";
 import ThemeToggler from "./assets/components/ThemeToggler";
 import Navigation from "./assets/components/Navigation";
+import RefProps from "./assets/components/RefProps";
 
 function App() {
   const isDark = true;
@@ -34,7 +35,9 @@ function App() {
             <ComplexProps />
           </div>
           <div>
-            <div id="ref" className="scroll-mt-200"></div>
+            <div id="ref" className="scroll-mt-200">
+              <RefProps />
+            </div>
             <div id="theme" className="scroll-mt-200">
               <ThemeToggler />
             </div>

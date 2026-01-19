@@ -32,8 +32,8 @@ const BasicProps = () => {
 
   return (
     <section className="bg-white p-8 rounded-md shadow-2xl">
-      <h2 className="text-3xl mb-2 font-medium">Basic Props</h2>
-      <p>
+      <h2 className="text-3xl font-bold text-gray-800 mb-2">Basic Props</h2>
+      <p className="text-gray-600">
         Basic props in React are used to pass data from a parent component to a
         child component. They allow you to customize the behavior and appearance
         of components by providing different values for their properties.
