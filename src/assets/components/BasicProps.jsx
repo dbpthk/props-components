@@ -8,8 +8,8 @@ function Button({ text, color, size, onClick, disabled }) {
       className={`
         rounded-md font-medium transition-all duration-300
         ${size === "small" && "text-xs h-8 px-3"}
-${size === "medium" && "text-base h-10 px-6"}
-${size === "large" && "text-lg h-12 px-8"}
+        ${size === "medium" && "text-base h-10 px-6"}
+        ${size === "large" && "text-lg h-12 px-8"}
 
 
         ${color === "primary" && "bg-blue-600 text-white hover:bg-blue-700"}
@@ -34,13 +34,9 @@ const BasicProps = () => {
     <section className="bg-white p-8 rounded-md shadow-2xl">
       <h2 className="text-3xl mb-2 font-medium">Basic Props</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure fugiat
-        tempora quam eius, accusamus quia distinctio, quo architecto vel porro
-        fuga dolor inventore at ullam iste optio id aliquid laudantium. Quia
-        nobis voluptas quisquam aperiam quibusdam. Iusto blanditiis a esse
-        impedit, velit tempore culpa animi! Accusantium possimus quaerat nulla
-        eos repellat maxime nemo optio, nesciunt quis veritatis alias,
-        voluptatibus quam?
+        Basic props in React are used to pass data from a parent component to a
+        child component. They allow you to customize the behavior and appearance
+        of components by providing different values for their properties.
       </p>
       <div className="flex flex-col gap-6 mt-6">
         <div>
