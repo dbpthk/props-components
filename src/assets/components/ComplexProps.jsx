@@ -39,11 +39,11 @@ function UserProfileCard({ user, theme, actions }) {
         </div>
       )}
       {actions && (
-        <div className="mt-6 flex gap-4">
+        <div className="mt-6 flex justify-between gap-4">
           {actions.primary && (
             <button
               onClick={actions.primary.onClick}
-              className={`px-4 py-2 rounded-md font-semibold cursor-pointer ${actions.primary.className}`}
+              className={`px-4 py-2 w-full rounded-md font-semibold cursor-pointer ${actions.primary.className}`}
             >
               {actions.primary.label}
             </button>
@@ -51,7 +51,7 @@ function UserProfileCard({ user, theme, actions }) {
           {actions.secondary && (
             <button
               onClick={actions.secondary.onClick}
-              className={`px-4 py-2 rounded-md font-semibold cursor-pointer ${actions.secondary.className}`}
+              className={`px-4 py-2 w-full rounded-md font-semibold cursor-pointer ${actions.secondary.className}`}
             >
               {actions.secondary.label}
             </button>
