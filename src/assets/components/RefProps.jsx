@@ -52,7 +52,7 @@ export default function RefProps() {
   };
 
   return (
-    <section className="p-8 bg-white rounded-xl shadow-lg">
+    <section className="p-8 bg-white rounded-xl shadow-2xl">
       <h2 className="text-3xl font-bold text-gray-800 mb-2">Ref Props</h2>
       <p className="text-gray-600 mb-5">
         Using refs to access DOM elements directly.

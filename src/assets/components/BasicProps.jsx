@@ -31,7 +31,7 @@ const BasicProps = () => {
   const handleClick = () => setClickCount((prev) => prev + 1);
 
   return (
-    <section className="bg-white p-8 rounded-md shadow-2xl">
+    <section id="basic" className="bg-white p-8 rounded-xl shadow-2xl">
       <h2 className="text-3xl font-bold text-gray-800 mb-2">Basic Props</h2>
       <p className="text-gray-600">
         Basic props in React are used to pass data from a parent component to a

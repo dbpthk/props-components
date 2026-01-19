@@ -2,14 +2,18 @@ import "./App.css";
 import BasicProps from "./assets/components/BasicProps";
 import ChildrenProps from "./assets/components/ChildrenProps";
 import ComplexProps from "./assets/components/ComplexProps";
-import ThemeToggler from "./assets/components/ThemeToggler";
+import ThemeToggler, { useTheme } from "./assets/components/ThemeToggler";
 import Navigation from "./assets/components/Navigation";
 import RefProps from "./assets/components/RefProps";
 
 function App() {
-  const isDark = true;
+  // const isDark = true;
+
+  const { isDark } = useTheme();
   return (
-    <div className={`min-h-screen w-screen bg-gray-800 py-10 px-5`}>
+    <div
+      className={`min-h-screen w-screen bg-gray-800 ${isDark ? "bg-gray-900" : "bg-gradient-to-br from-blue-50 to-purple-50"} py-10 px-5`}
+    >
       <Navigation />
       <div className="container mx-auto px-4 py-8">
         <header
@@ -34,13 +38,12 @@ function App() {
           <div id="complex" className="scroll-mt-200">
             <ComplexProps />
           </div>
-          <div>
-            <div id="ref" className="scroll-mt-200">
-              <RefProps />
-            </div>
-            <div id="theme" className="scroll-mt-200">
-              <ThemeToggler />
-            </div>
+
+          <div id="ref" className="scroll-mt-200">
+            <RefProps />
+          </div>
+          <div id="theme" className="scroll-mt-200">
+            <ThemeToggler />
           </div>
         </div>
       </div>
